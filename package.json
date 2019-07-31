@@ -1,0 +1,27 @@
+{
+  "name": "nox-emailer",
+  "version": "1.0.1",
+  "description": "Configurable HTML Email Template and SendGrid Integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tittuvarghese/nox-emailer.git"
+  },
+  "keywords": [
+    "HTML",
+    "Email",
+    "SendGrid"
+  ],
+  "author": "Tittu Varghese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tittuvarghese/nox-emailer/issues"
+  },
+  "homepage": "https://github.com/tittuvarghese/nox-emailer#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0"
+  }
+}
