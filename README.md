@@ -53,8 +53,8 @@ let data = {
 #### Email Configuration
 ```javascript
 let emailConfiguration = {
-  toAddress: "tittu@netobjex.com",
-  fromAddress: "Email Service - NetObjex <noreply@netobjex.com>",
+  toAddress: "alias@netobjex.com",
+  fromAddress: "Email Service - NetObjex <alias@netobjex.com>",
   subject: "Welcome Email"
 }
 ```

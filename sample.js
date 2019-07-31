@@ -26,7 +26,6 @@ let configuration = {
 let data = {
   subject: "Subject of Email",
   receiverName : "Receiver Name",
-  receiverEmail: "tittu@netobjex.com",
   subTitle : "Email Sub Title",
   mainTitle : "Email Main Title",
   mailContent : `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
@@ -36,8 +35,8 @@ let data = {
 }
 
 let emailConfiguration = {
-  toAddress: "tittu@netobjex.com",
-  fromAddress: "Email Service - NetObjex <noreply@netobjex.com>",
+  toAddress: "alias@netobjex.com",
+  fromAddress: "Email Service - NetObjex <alias@netobjex.com>",
   subject: "Welcome Email"
 }
 
