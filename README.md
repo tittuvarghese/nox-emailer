@@ -1,12 +1,14 @@
-## NetObjex Mailing Service
+## HTML Mailing Service
 Provides option for configurable HTML Template and send the email over SendGrid mail service.
 
 ### Setup Environment Variables
 Do not hardcode your Twilio SendGrid API Key into your code. Instead, use an environment variable or some other secure means of protecting your Twilio SendGrid API Key. Following is an example of using an environment variable.
 
+```
 echo "export SENDGRID_API_KEY='YOUR_API_KEY'" > sendgrid.env
 echo "sendgrid.env" >> .gitignore
 source ./sendgrid.env
+```
 
 ### Install Package
 npm install --save nox-emailer
@@ -52,15 +54,17 @@ let data = {
 ```javascript
 let emailConfiguration = {
   toAddress: "tittu@netobjex.com",
-  fromAddress: "noreply@netobjex.com",
+  fromAddress: "Email Service - NetObjex <noreply@netobjex.com>",
   subject: "Welcome Email"
 }
 ```
 #### Code Sample
 ```javascript
-template.generateEmailContent(configuration, data)
+let noxEmailer = require('nox-emailer');
+
+noxEmailer.generateEmailContent(configuration, data)
 .then(htmlTemplate => {
-  mailer.sendEmail(emailConfiguration, htmlTemplate)
+  noxEmailer.sendEmail(emailConfiguration, htmlTemplate)
   .then(response => {
     console.log(response);
   }).catch(error => {

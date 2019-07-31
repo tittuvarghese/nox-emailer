@@ -4,3 +4,4 @@
 */
 
 require('./src/template');
+require('./src/mailer');

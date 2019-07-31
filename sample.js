@@ -37,7 +37,7 @@ let data = {
 
 let emailConfiguration = {
   toAddress: "tittu@netobjex.com",
-  fromAddress: "noreply@netobjex.com",
+  fromAddress: "Email Service - NetObjex <noreply@netobjex.com>",
   subject: "Welcome Email"
 }
 
