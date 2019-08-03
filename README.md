@@ -11,7 +11,9 @@ source ./sendgrid.env
 ```
 
 ### Install Package
+```
 npm install --save nox-emailer
+```
 
 ### Quick Start, Hello Email
 ##### Email Template Configuration
@@ -62,9 +64,9 @@ let emailConfiguration = {
 ```javascript
 let noxEmailer = require('nox-emailer');
 
-noxEmailer.generateEmailContent(configuration, data)
+noxEmailer.template.generateEmailContent(configuration, data)
 .then(htmlTemplate => {
-  noxEmailer.sendEmail(emailConfiguration, htmlTemplate)
+  noxEmailer.mailService.sendEmail(emailConfiguration, htmlTemplate)
   .then(response => {
     console.log(response);
   }).catch(error => {

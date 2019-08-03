@@ -3,5 +3,10 @@
 * @author Tittu Varghese
 */
 
-require('./src/template');
-require('./src/mailer');
+const template = require('./src/template');
+const mailService = require('./src/mailer');
+
+module.exports = {
+	template,
+	mailService,
+};
