@@ -78,7 +78,7 @@ let generateEmailContent = (configuration, data) => {
       <td align="center">
       <table border="0" align="center" width="460" cellpadding="0" cellspacing="0" class="container590">
       <tbody class="nana ui-sortable"><div class="koso" style="margin:0 auto;"> <tr class="tata2" style="outline: blue solid 0px; outline-offset: -1px;">
-      <td align="center" mc:edit="main-header" style="color: #2780F0; font-size: 18px; font-family: Open Sans, sans-serif;; mso-line-height-rule: exactly; line-height: 22px;" class="title_color sasa">
+      <td align="center" mc:edit="main-header" style="color: `+ configuration.styles.primaryTextColor +`; font-size: 18px; font-family: Open Sans, sans-serif;; mso-line-height-rule: exactly; line-height: 22px;" class="title_color sasa">
       <!-- ======= section header ======= -->
       <div style="line-height: 22px;" class="edit_text sasa-w">
       <multiline spellcheck="false" style="display: inline-block; pointer-events: visible;">
@@ -89,7 +89,7 @@ let generateEmailContent = (configuration, data) => {
       </tr></div>
       <div class="koso" style="margin:0 auto;"> <tr class="tata2" style="outline: blue solid 0px; outline-offset: -1px;"><td height="10" style="font-size: 10px; line-height: 10px;" class="sasa sasa2 ui-resizable">&nbsp;<div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90; display: none;"></td></tr></div>
       <div class="koso" style="margin:0 auto;"> <tr class="tata2">
-      <td align="center" mc:edit="main-text" style="color: #2780F0; font-size: 18px; font-family: Open Sans, sans-serif;; font-weight: 600; mso-line-height-rule: exactly; line-height: 22px;" class="text_color sasa">
+      <td align="center" mc:edit="main-text" style="color: `+ configuration.styles.primaryTextColor +`; font-size: 18px; font-family: Open Sans, sans-serif;; font-weight: 600; mso-line-height-rule: exactly; line-height: 22px;" class="text_color sasa">
       <div style="line-height: 22px" class="edit_text sasa-w">
       <!-- ======= section text ======= -->
       <multiline spellcheck="false" style="display: inline-block; pointer-events: visible;">

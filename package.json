@@ -1,6 +1,6 @@
 {
   "name": "nox-emailer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Configurable HTML Email Template and SendGrid Integration",
   "main": "index.js",
   "scripts": {
